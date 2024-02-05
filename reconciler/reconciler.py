@@ -98,11 +98,8 @@ def main():
     parser.add_argument('-s','--source', help='Path to the source CSV file', required=True)
     parser.add_argument('-t', '--target', help='Path to the target CSV file', required=True)
     parser.add_argument('-o', '--output', help='Path to the output reconciliation report CSV file', required=True)
-    # parser.add_argument('-p', '--processes', help='Number of processes to use', default=4, type=int)
-    # parser.add_argument('-c', '--chunk-size', help='Number of records to process in each chunk', default=10000, type=int)
     args = parser.parse_args()
 
-    start_time = time.time()
     try:
         rc = Reconciler(args.source, args.target)
         data = rc.reconcile_data()
@@ -116,6 +113,6 @@ def main():
             print(f'Discrepancies found: {len(data.discrepancies)}')
     except ValueError as e:
             print(e)
-    print(f'Execution time: {time.time() - start_time}')
+
 if __name__ == '__main__':
     main()

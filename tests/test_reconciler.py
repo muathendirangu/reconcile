@@ -1,7 +1,7 @@
 import unittest
 import csv
 import os
-from reconciler import Reconciler, ReconciliationReport
+from reconciler.reconciler import Reconciler, ReconciliationReport
 
 class TestReconciler(unittest.TestCase):
     def setUp(self):

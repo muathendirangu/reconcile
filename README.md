@@ -23,14 +23,17 @@ Make sure you have Python3 installed on your machine. You can download it from [
    Execute the script with the appropriate command-line arguments:
 
    ```bash
-   python reconciler.py -s source.csv -t target.csv -o output_report.csv
+   python reconciler/reconciler.py -s source.csv -t target.csv -o output_report.csv
    ```
 
    - `-s` or `--source`: Path to the source CSV file.
    - `-t` or `--target`: Path to the target CSV file.
    - `-o` or `--output`: Path to the output reconciliation report CSV file.
 
-
+4. **Test the program:**
+   ```bash
+   python3 -m unittest test_reconciler.py
+   ```
 ### Output
 
 After running the script, you will see the reconciliation report generated in CSV format at the specified output path. Additionally, the script will print information about records missing in the source and target, as well as the number of discrepancies found.
