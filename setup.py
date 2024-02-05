@@ -10,7 +10,6 @@ setup(
     author='muathendirangu',
     author_email='muathe.ndirangu@gmail.com',
     license='MIT',
-    packages=find_packages(),
     entry_points={
         'console_scripts': [
             'reconciler=reconciler.reconciler:main'
