@@ -7,7 +7,7 @@ setup(
     version='0.1.0',
     description='reconciler',
     url='https://github.com/muathendirangu/reconcile',
-    author='muathe ndirangu',
+    author='muathendirangu',
     author_email='muathe.ndirangu@gmail.com',
     license='MIT',
     packages=find_packages(),
