@@ -46,5 +46,5 @@ After running the script, you will see the reconciliation report generated in CS
 
 ### Recommendations
 - Depending on the workflow we can add concurrency to our tool
-         - For reading large csv files we can use asyncio module since this an i/o operation
-         - For reconciliation of data since it is a cpu bound we can add a function to find out the number of cpus where our program is running on and leverage the multiprocessing module
+- For reading large csv files we can use asyncio module since this an i/o operation
+- For reconciliation of data since it is a cpu bound we can add a function to find out the number of cpus where our program is running on and leverage the multiprocessing module
