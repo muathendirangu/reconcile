@@ -1,7 +1,5 @@
 import csv
 import argparse
-import time
-from multiprocessing import Pool
 
 
 class ReconciliationReport:
@@ -13,7 +11,9 @@ class ReconciliationReport:
     def generate_report(self, filepath):
         try:
             with open(filepath, 'w', newline='') as file:
-                writer = csv.DictWriter(file, fieldnames=['Type', 'Record Identifier', 'Field', 'Source Value', 'Target Value'])
+                writer = csv.DictWriter(file,
+                                         fieldnames=
+                                         ['Type', 'Record Identifier', 'Field', 'Source Value', 'Target Value'])
                 writer.writeheader()
                 writer.writerows(self.discrepancies)
         except FileNotFoundError:

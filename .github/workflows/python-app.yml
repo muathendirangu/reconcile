@@ -32,7 +32,7 @@ jobs:
 
     - name: Test with unittests
       run: |
-        python -m unittest test_reconciler.py
+        python -m unittest tests/test_reconciler.py
 
     - name: Build package
       run: python setup.py sdist bdist_wheel
