@@ -73,7 +73,6 @@ class Reconciler:
         # Identify field discrepancies for common records
         common_records = source_ids.intersection(target_ids)
 
-
         for record_id in common_records:
             s_record = next((record for record in self.source_data if record['ID'] == record_id), None)
             t_record = next((record for record in self.target_data if record['ID'] == record_id), None)
