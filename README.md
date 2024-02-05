@@ -43,3 +43,8 @@ After running the script, you will see the reconciliation report generated in CS
 - Ensure that the source and target CSV files have the same structure, including the field names.
 - Make sure to provide valid file paths for the source, target, and output files.
 - Adjust the number of processes and chunk size based on your system's capabilities for optimal performance.
+
+### Recommendations
+- Depending on the workflow we can add concurrency to our tool
+         - For reading large csv files we can use asyncio module since this an i/o operation
+         - For reconciliation of data since it might be cpu bound we can add a function to find out the number of cpus where our program is running on and leverage the multiprocessing module

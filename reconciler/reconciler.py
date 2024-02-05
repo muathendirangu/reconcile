@@ -1,7 +1,6 @@
 import csv
 import argparse
 
-
 class ReconciliationReport:
     def __init__(self, missing_in_target, missing_in_source, discrepancies):
         self.missing_in_target = missing_in_target
@@ -60,6 +59,8 @@ class Reconciler:
         missing_in_source = target_ids - source_ids
         if missing_in_source:
             for record_id in missing_in_source:
+                # leverage next since we may be iterating through a large dataset and it is a memory efficient approach
+                # which avoids loading the entire dataset in memory
                 t_record = next((record for record in self.target_data if record['ID'] == record_id), None)
                 discrepancies.append({
                     'Type': 'Missing in Source',
