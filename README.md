@@ -23,7 +23,7 @@ Make sure you have Python3 installed on your machine. You can download it from [
    Execute the script with the appropriate command-line arguments:
 
    ```bash
-   python reconciliation_script.py -s source.csv -t target.csv -o output_report.csv
+   python reconciler.py -s source.csv -t target.csv -o output_report.csv
    ```
 
    - `-s` or `--source`: Path to the source CSV file.
