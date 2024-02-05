@@ -15,6 +15,6 @@ setup(
         'console_scripts': [
             'reconciler=reconciler.reconciler:main'
         ],
-    }
-
+    },
+    long_description_content_type='text/markdown'
 )
