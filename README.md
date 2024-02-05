@@ -32,7 +32,7 @@ Make sure you have Python3 installed on your machine. You can download it from [
 
 4. **Test the program:**
    ```bash
-   python3 -m unittest test_reconciler.py
+   python3 -m unittest tests/test_reconciler.py
    ```
 ### Output
 
