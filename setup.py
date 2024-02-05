@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='aminimalreconciler',
-    version='0.1.1',
+    version='0.1.3',
     description='reconciler',
     url='https://github.com/muathendirangu/reconcile',
     author='muathendirangu',
