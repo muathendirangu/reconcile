@@ -1,10 +1,9 @@
-# Copyright (c) 2019, <NAME>
-# All rights reserved.
+
 from setuptools import setup, find_packages
 
 setup(
     name='aminimalreconciler',
-    version='0.1.3',
+    version='0.1.4',
     description='reconciler',
     url='https://github.com/muathendirangu/reconcile',
     author='muathendirangu',
